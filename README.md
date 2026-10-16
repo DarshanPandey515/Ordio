@@ -3,8 +3,8 @@
 Ordio is a voice-first grocery ordering system. Customers place their grocery order by calling a phone
 number and speaking it out, in a normal conversation, instead of filling in an app form.
 
-> **Project status:** early stage. This repository currently contains project documentation only. No
-> application code has been implemented yet, and none of the capabilities described below are operational.
+> **Status:** the capabilities described below are intended behaviour, not shipped features. This
+> repository contains project documentation only; no application code exists yet.
 
 ## Introduction
 
@@ -86,7 +86,7 @@ A conceptual decomposition of the system, independent of any specific provider:
 | Component | Responsibility |
 | --- | --- |
 | Telephony | Inbound call handling, session lifecycle, media streaming, and call disposition. |
-| Speech recognition | Streaming audio to text, including code-switched speech. |
+| Speech recognition | Streaming audio to text across the languages a merchant's customers actually speak. |
 | Speech synthesis | Text to speech for prompts, questions, and the readback. |
 | Conversational agent | Dialogue state, intent handling, and orchestration of the validated tools. |
 | Validated tools | Catalog lookup, availability check, pricing, and order creation. Every tool call returns catalog-derived data. |
